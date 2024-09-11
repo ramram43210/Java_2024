@@ -1,0 +1,13 @@
+aws sqs create-queue --queue-name MyStandardQueue
+
+aws sqs create-queue --queue-name MyFifoQueue.fifo --attributes FifoQueue=true
+
+aws sqs list-queues
+
+aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/093547934696/MyStandardQueue --message-body "Hello, this is a test message"
+
+aws sqs receive-message --queue-url https://sqs.us-east-1.amazonaws.com/093547934696/MyStandardQueue
+
+aws sqs delete-message --queue-url https://sqs.us-east-1.amazonaws.com/093547934696/MyStandardQueue --receipt-handle AQEBDhPs2rbpMJfI0u217iRn8vJV28Kr01K4WQSOpdJSLhgmGFjnglDTZMaswfVvUz86shEyyn+UcX7IKHQWf99Z3sj+j2jpBiP27WFtdJQAHU9w7ytJaGGYlWtkniccl+yHH8devNN84J7InpML7RjA8L35CYHTg3D/NNk3bMJbb/c1jcM0GvTiWF2vepagPcgXL/yYSSj8/5AHzzaNbnVypPDctYyRVDFZpD+e4NoPopR2Ik4T1/uoDvPqW5LXpgRYbM4MDUci3kzFuYoku0N7qrfaDGTbGUiOWQeQ8tJZALLw/ndzPcCMc0iXuw2BzUHROSlGdIvZTtI/65lMbKThX/+3JgdVOapJTA13BdCR3u33kwd6Ph93NktWqOX+S+sYLC8x1//Z+q/mnLePs4blLQ==
+
+aws sqs delete-queue --queue-url https://sqs.us-east-1.amazonaws.com/093547934696/MyStandardQueue
