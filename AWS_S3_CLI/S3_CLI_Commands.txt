@@ -1,0 +1,15 @@
+aws configure
+
+aws s3 ls
+
+aws s3 ls s3://rambucket1234
+
+aws s3 cp D:/misc/images/Bird.jpg s3://rambucket1234
+
+aws s3 cp s3://rambucket1234/Bird.jpg D:/misc/download/
+
+aws s3 cp s3://rambucket1234/Bird.jpg s3://destrambucket/
+
+aws s3 sync D:/misc/images/ s3://destrambucket/
+
+aws s3 rb s3://destrambucket --force
