@@ -1,0 +1,3 @@
+aws s3 cp s3://ram-source-bucket1234/lion.jpg s3://ram-destination-bucket1234/lion.jpg
+
+aws s3 cp s3://ram-source-bucket1234/images/ s3://ram-destination-bucket1234/images/ --recursive
