@@ -1,0 +1,9 @@
+title This is a title
+
+Client-> Website:username and password
+note over Website:Generates a JWT
+Website -> Client: JWT
+
+note over Client:Stores JWT
+Client-> Website:JWT
+note over Website:Checks the JWT
