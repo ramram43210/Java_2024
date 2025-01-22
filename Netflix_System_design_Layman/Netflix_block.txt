@@ -1,0 +1,14 @@
+graph LR
+    UI[User Interface: App/Website] --> Internet
+    Internet --> LoadBalancer[Load Balancer]
+    LoadBalancer --> AuthService[Microservice: Authentication]
+    LoadBalancer --> RecService[Microservice: Recommendations]
+    LoadBalancer --> StreamService[Microservice: Streaming]
+    
+    AuthService --> Database[Databases]
+    RecService --> Database
+    StreamService --> Database
+    StreamService --> CDN[Content Delivery Network]
+
+    Internet --> CDN
+    CDN --> User[User's Device: Fast Video Delivery]
