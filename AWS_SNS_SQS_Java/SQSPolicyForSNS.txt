@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Id": "SQSPolicyForSNS",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "sqs:SendMessage",
+      "Resource": "arn:aws:sqs:us-east-1:093547934696:MySQSQueue",
+      "Condition": {
+        "ArnEquals": {
+          "aws:SourceArn": "arn:aws:sns:us-east-1:093547934696:MySNSTopic"
+        }
+      }
+    }
+  ]
+}
