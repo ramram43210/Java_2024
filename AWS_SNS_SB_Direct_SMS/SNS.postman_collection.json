@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "35e4beb8-8271-4c66-b455-ceb22f78b588",
+		"name": "SNS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14340208"
+	},
+	"item": [
+		{
+			"name": "subscribe",
+			"protocolProfileBehavior": {
+				"protocolVersion": "http1"
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sns/subscribe?email=ramdemo4321@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sns",
+						"subscribe"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "ramdemo4321@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Notify",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "SendSMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sns/sendSms?message=Test SMS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sns",
+						"sendSms"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Test SMS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendDirectSMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sns/sendSms?phoneNumber=+917483505976&message=Hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sns",
+						"sendSms"
+					],
+					"query": [
+						{
+							"key": "phoneNumber",
+							"value": "+917483505976"
+						},
+						{
+							"key": "message",
+							"value": "Hello"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
