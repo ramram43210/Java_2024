@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="Page-1" id="Wft99vleqtvQuX-fibYB">
+    <mxGraphModel dx="1374" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-1" value="You (Your Device)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=17;strokeWidth=4;perimeterSpacing=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="150" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-2" value="Internet Service Provider" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=17;strokeWidth=4;perimeterSpacing=1;" parent="1" vertex="1">
+          <mxGeometry x="357" y="20" width="193" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-3" value="DNS Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#f8cecc;strokeColor=#b85450;fontSize=17;strokeWidth=4;perimeterSpacing=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="20" width="150" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-4" value="Website Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=17;strokeWidth=4;perimeterSpacing=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="20" width="150" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-5" value="Connects to Internet (Wi-Fi/Mobile Data)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=17;" parent="1" source="uRDiBV-X5QJQC1G1MLAr-1" target="uRDiBV-X5QJQC1G1MLAr-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-6" value="Asks for website address (e.g. google.com)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=17;" parent="1" source="uRDiBV-X5QJQC1G1MLAr-1" target="uRDiBV-X5QJQC1G1MLAr-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="393" y="179" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-7" value="Returns IP address of website" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=17;" parent="1" source="uRDiBV-X5QJQC1G1MLAr-3" target="uRDiBV-X5QJQC1G1MLAr-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="396" y="231" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-8" value="Sends request to open website" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;fontSize=17;" parent="1" source="uRDiBV-X5QJQC1G1MLAr-1" target="uRDiBV-X5QJQC1G1MLAr-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="493" y="283" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-9" value="Sends website data in packets" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;fontSize=17;" parent="1" source="uRDiBV-X5QJQC1G1MLAr-4" target="uRDiBV-X5QJQC1G1MLAr-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="496" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRDiBV-X5QJQC1G1MLAr-10" value="Browser shows the website content" style="curved=1;endArrow=block;rounded=0;fontSize=17;" parent="1" source="uRDiBV-X5QJQC1G1MLAr-1" target="uRDiBV-X5QJQC1G1MLAr-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="146" y="387" />
+              <mxPoint x="146" y="417" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
